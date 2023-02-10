@@ -51,7 +51,7 @@ document.querySelector("#submit").addEventListener("click", e => {
     *Productos Seleccionados*%0A
 		${arrayDeProductosExtraidos}.%0A
 		*Valor total de la compra*%0A
-		${totalCompra.reduce((a, b) => a + b, 0)}%0A
+		$${totalCompra.reduce((a, b) => a + b, 0)}%0A
     `;
 
   if (cliente === "" || fecha === "" || hora === "") {
