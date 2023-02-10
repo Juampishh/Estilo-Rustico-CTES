@@ -46,12 +46,12 @@ document.querySelector("#submit").addEventListener("click", e => {
 		${hora}%0A
     *Medio de pago*%0A
 		${empleado}%0A
-		*Puntue su experiencia*%0A
-		${servicio}%0A
     *Productos Seleccionados*%0A
 		${arrayDeProductosExtraidos}.%0A
 		*Valor total de la compra*%0A
 		$${totalCompra.reduce((a, b) => a + b, 0)}%0A
+    *Puntue su experiencia*%0A
+		${servicio}%0A
     `;
 
   if (cliente === "" || fecha === "" || hora === "") {
