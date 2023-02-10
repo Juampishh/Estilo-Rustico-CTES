@@ -38,20 +38,7 @@ document.querySelector("#submit").addEventListener("click", e => {
   const url = `https://api.whatsapp.com/send?phone=${telefono}&text=
 		*_Estilo Rustico_*%0A
 		*Reservas*%0A%0A
-		*Nombre y Apellido*%0A
-		${cliente}%0A
-		*Fecha de tu reserva*%0A
-		${fecha}%0A
-		*Numero de contacto*%0A
-		${hora}%0A
-    *Medio de pago*%0A
-		${empleado}%0A
-    *Productos Seleccionados*%0A
-		${arrayDeProductosExtraidos}.%0A
-		*Valor total de la compra*%0A
-		$${totalCompra.reduce((a, b) => a + b, 0)}%0A
-    *Puntue su experiencia*%0A
-		${servicio}%0A
+		*Nombre y Apellido*%0A${cliente}%0A*Fecha de tu reserva*%0A${fecha}%0A*Numero de contacto*%0A${hora}%0A*Medio de pago*%0A${empleado}%0A*Productos Seleccionados*%0A${arrayDeProductosExtraidos}.%0A*Valor total de la compra*%0A$${totalCompra.reduce((a, b) => a + b, 0)}%0A*Puntue su experiencia*%0A${servicio}%0A
     `;
 
   if (cliente === "" || fecha === "" || hora === "") {
