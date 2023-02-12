@@ -531,8 +531,8 @@ p {
 .card:hover img{
     top: 20%;
     left: 55%;
-    width: 200px;
-    height: 180px;
+    width: 160px;
+    height: 140px;
 }
 
 .card .content{
