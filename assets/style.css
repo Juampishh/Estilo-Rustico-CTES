@@ -203,8 +203,7 @@ p {
 }
 
 .maps{
-    width: 370px;
-    height: 200px;
+
     border-radius: 15px;
    }
 .contact {
@@ -523,9 +522,9 @@ p {
     position: absolute;
     top: 20%;
     border-radius: 20px;
-    left: 11%;
+    left: 5%;
     transform: translate(-50,-50);
-    height: 250px;
+    height: 300px;
     pointer-events: none;
     transition: 0.5s;
 }
