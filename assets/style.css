@@ -567,10 +567,8 @@ p {
     background-color: #000;
     border-radius: 15px;
     margin-bottom:20px ;
-    width: 90px;
-    height: 55px;
     padding: 10px;
-    font-size: 18px;
+
 }
 
 .content a:hover{
