@@ -366,6 +366,7 @@ main {
 
     .header-mobile .logo {
         color: var(--clr-gray);
+        
     }
 
     .open-menu, .close-menu {

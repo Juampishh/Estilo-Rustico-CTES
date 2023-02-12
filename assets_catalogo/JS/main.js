@@ -278,7 +278,7 @@ if(productosEnCarritoLS){
 function agregarAlCarrito (e){
 
     Toastify({
-        text: "Producto agregado",
+        text: "Agregado al carrito",
         duration: 2000,
         gravity: "top", // `top` or `bottom`
         position: "right", // `left`, `center` or `right`
