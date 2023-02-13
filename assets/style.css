@@ -536,7 +536,7 @@ p {
     height: 280px;
     pointer-events: none;
     transition: 0.5s;
-   z-index: 10;
+
 }
 
 .card:hover img{
@@ -544,12 +544,12 @@ p {
     left: 55%;
     width: 160px;
     height: 200px;
-    bottom: 20%;
+
 
 }
 
 .card .content{
-    left: 150px;
+    left: 0px;
     width: 90px;
     box-shadow: none;
     position: relative;
@@ -575,6 +575,8 @@ p {
 }
 
 .content a{
+    width: 40px;
+    font-size: 10px;
     text-decoration: none;
     color: #ffff;
     background-color: #000;
