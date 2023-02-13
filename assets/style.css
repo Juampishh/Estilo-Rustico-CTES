@@ -289,7 +289,9 @@ p {
 .card:hover .circle:before{
     clip-path: circle(600px at center);
 }
-
+.hero-slider ul{
+    list-style: none;
+}
 .card img{
     width: 450px;
     position: absolute;
@@ -300,7 +302,10 @@ p {
     height: 270px;
     pointer-events: none;
     transition: 0.5s;
+
+    
 }
+
 
 .card:hover img{
     left: 45%;
