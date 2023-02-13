@@ -25,11 +25,11 @@ body {
 
 .navbar {
     display: flex;
-    margin-right: 10px;
+
 }
 
 .logo{
-    margin-right: 40px;
+
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .close-menu{
@@ -204,7 +204,7 @@ p {
 }
 
 .maps{
-
+    width: 250px;
     border-radius: 15px;
    }
 .contact {
@@ -448,18 +448,18 @@ p {
   
     .btn-togle{
         display: block;
-        width: 40px;
-        height: 40px;
         background: none;
         color: #fff;
         font-size: 39px;
         cursor: pointer;
         width: 40px;
         transform: translateX(200px);
+        position: relative;
+        left: 50px;
     }
    
     .box-container{
-        width: 270px;
+        width: 240px;
         
     }
     .number{
@@ -522,16 +522,16 @@ p {
 }
 
 .card:hover .circle:before{
-    clip-path: square(190px at center);
+    clip-path: square(150px at center);
     border-radius: 20px;
 }
 
 .card img{
-    width: 300px;
+    width: 270px;
     position: absolute;
     top: 10%;
     border-radius: 20px;
-    left: 13%;
+    left: 14%;
     transform: translate(-50,-50);
     height: 280px;
     pointer-events: none;
@@ -549,7 +549,7 @@ p {
 }
 
 .card .content{
-    left: 0px;
+    left: 20px;
     width: 90px;
     box-shadow: none;
     position: relative;
