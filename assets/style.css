@@ -531,7 +531,7 @@ p {
     position: absolute;
     top: 10%;
     border-radius: 20px;
-    left: 14%;
+    left: 15%;
     transform: translate(-50,-50);
     height: 280px;
     pointer-events: none;
@@ -575,8 +575,8 @@ p {
 }
 
 .content a{
-    width: 40px;
-    font-size: 10px;
+
+    font-size: 15px;
     text-decoration: none;
     color: #ffff;
     background-color: #000;
