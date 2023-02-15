@@ -3,6 +3,7 @@ const productos = [
         id: "item 1",
         titulo: "item 1",
         imagen: "./assets_catalogo/IMG/item 1.jpg",
+        info: "Metro cuadrado, peso, altura ,seccion",
         categoria: {
             nombre: "Antitermico",
             id: "Antitermicos"
@@ -13,6 +14,7 @@ const productos = [
         id: "item 2",
         titulo:"item 2",
         imagen:"./assets_catalogo/IMG/item 2.jpg",
+        info: "Metro cuadrado, peso, altura ,seccion",
         categoria: {
             nombre: "Loseta",
             id: "Pisos"
@@ -23,6 +25,7 @@ const productos = [
         id: "item 3",
         titulo: "item 3",
         imagen: "./assets_catalogo/IMG/item 3.jpg",
+        info: "Metro cuadrado, peso, altura ,seccion",
         categoria: {
             nombre: "Revestimiento",
             id: "Revestimientos"
@@ -33,6 +36,7 @@ const productos = [
         id: "item 4",
         titulo: "item 4",
         imagen: "./assets_catalogo/IMG/item 4.jpg",
+        info: "Metro cuadrado, peso, altura ,seccion",
         categoria: {
             nombre: "Revestimiento",
             id: "Revestimientos"
@@ -43,6 +47,7 @@ const productos = [
         id: "item 5",
         titulo: "item 5",
         imagen: "./assets_catalogo/IMG/item 5.jpg",
+        info: "Metro cuadrado, peso, altura ,seccion",
         categoria: {
             nombre: "Revestimiento",
             id: "Revestimientos"
@@ -53,6 +58,7 @@ const productos = [
         id: "item 6",
         titulo: "item 6",
         imagen: "./assets_catalogo/IMG/item 6.jpg",
+        info: "Metro cuadrado, peso, altura ,seccion",
         categoria: {
             nombre: "Revestimiento",
             id: "Revestimientos"
@@ -63,6 +69,7 @@ const productos = [
         id: "item 7",
         titulo: "item 7",
         imagen: "./assets_catalogo/IMG/item 7.jpg",
+        info: "Metro cuadrado, peso, altura ,seccion",
         categoria: {
             nombre: "Revestimiento",
             id: "Revestimientos"
@@ -73,6 +80,7 @@ const productos = [
         id: "item 8",
         titulo: "item 8",
         imagen: "./assets_catalogo/IMG/item 8.jpg",
+        info: "Metro cuadrado, peso, altura ,seccion",
         categoria: {
             nombre: "Revestimiento",
             id: "Revestimientos"
@@ -83,6 +91,7 @@ const productos = [
         id: "item 9",
         titulo: "item 9",
         imagen: "./assets_catalogo/IMG/item 9.jpg",
+        info: "Metro cuadrado, peso, altura ,seccion",
         categoria: {
             nombre: "Revestimiento",
             id: "Revestimientos"
@@ -93,6 +102,7 @@ const productos = [
         id: "item 10",
         titulo: "item 10",
         imagen: "./assets_catalogo/IMG/item 10.jpg",
+        info: "Metro cuadrado, peso, altura ,seccion",
         categoria: {
             nombre: "Revestimiento",
             id: "Revestimientos"
@@ -104,6 +114,7 @@ const productos = [
         id: "item 11",
         titulo: "item 11",
         imagen: "./assets_catalogo/IMG/item 11.jpg",
+        info: "Metro cuadrado, peso, altura ,seccion",
         categoria: {
             nombre: "Loseta",
             id: "Pisos"
@@ -115,6 +126,7 @@ const productos = [
         id: "item 12",
         titulo: "item 12",
         imagen: "./assets_catalogo/IMG/item 12.jpg",
+        info: "Metro cuadrado, peso, altura ,seccion",
         categoria: {
             nombre: "Loseta",
             id: "Pisos"
@@ -126,6 +138,7 @@ const productos = [
         id: "item 13",
         titulo: "item 13",
         imagen: "./assets_catalogo/IMG/item 13.jpg",
+        info: "Metro cuadrado, peso, altura ,seccion",
         categoria: {
             nombre: "Loseta",
             id: "Pisos"
@@ -137,6 +150,7 @@ const productos = [
         id: "item 14",
         titulo: "item 14",
         imagen: "./assets_catalogo/IMG/item 14.jpg",
+        info: "Metro cuadrado, peso, altura ,seccion",
         categoria: {
             nombre: "Loseta",
             id: "Pisos"
@@ -148,6 +162,7 @@ const productos = [
         id: "item 15",
         titulo: "item 15",
         imagen: "./assets_catalogo/IMG/item 15.jpg",
+        info: "Metro cuadrado, peso, altura ,seccion",
         categoria: {
             nombre: "Loseta",
             id: "Pisos"
@@ -170,6 +185,7 @@ const productos = [
         id: "item 17",
         titulo: "item 17",
         imagen: "./assets_catalogo/IMG/item 17.jpg",
+        info: "Metro cuadrado, peso, altura ,seccion",
         categoria: {
             nombre: "Loseta",
             id: "Pisos"
@@ -197,6 +213,10 @@ function cargarProductos(productosElegidos){
         const div = document.createElement('div');
         div.classList.add('producto');
         div.innerHTML = `
+            <div class="info-producto ">
+                <h3>Informacion del producto</h3>
+                <p>${producto.info}</p>             
+            </div>
             <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
             <div class="producto-detalles">
                 <h3 class="producto-titulo">${producto.titulo}</h3>
@@ -319,6 +339,21 @@ function actualizarNumerito (){
 
 
 
+//Funcion para mostrar la informacion de cada producto
+const imageProduct = [...document.querySelectorAll('.producto-imagen')];
+const activeInfo = [...document.querySelectorAll('.info-producto')];
 
+imageProduct.forEach((image)=>{
+    image.addEventListener('click',()=>{      
+        activeInfo.forEach((product)=>{
+            if (product.classList.contains('active-info')){
 
+                product.classList.remove('active-info');
+
+           }else{
+                product.classList.add('active-info')
+           }
+        })
+    }) 
+})
 
