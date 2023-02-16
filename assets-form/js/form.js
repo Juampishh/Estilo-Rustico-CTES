@@ -6,7 +6,7 @@ let arrayDeProductosExtraidos = [];
 const obtenerProductsLS = () =>{
   productosExtraidos.forEach(element => {
 
-    arrayDeProductosExtraidos.push(element.categoria.nombre);
+    arrayDeProductosExtraidos.push(element.categoria.nombre +'-X'+ element.cantidad);
     totalCompra.push(element.precio);
   });
 
